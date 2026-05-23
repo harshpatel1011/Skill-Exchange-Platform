@@ -41,10 +41,10 @@ const Home = () => {
           {/* Floating Card 1: Liam Vance teaches React */}
           <div className="glass-panel home-style-12">
             <div className="home-style-13">
-              <div className="home-style-14">LV</div>
+              <div className="home-style-14">HP</div>
               <div>
-                <h4 className="home-style-15">Liam Vance</h4>
-                <p className="home-style-16">Senior Software Dev</p>
+                <h4 className="home-style-15">Harsh Patel</h4>
+                <p className="home-style-16">Frontend Developer</p>
               </div>
             </div>
             <div className="home-style-17">
@@ -61,15 +61,16 @@ const Home = () => {
           {/* Floating Card 2: Maya Thorne teaches English */}
           <div className="glass-panel home-style-22">
             <div className="home-style-23">
-              <div className="home-style-24">MT</div>
+              <div className="home-style-24">JC</div>
               <div>
-                <h4 className="home-style-25">Maya Thorne</h4>
-                <p className="home-style-26">Language Instructor</p>
+                <h4 className="home-style-25">Jitendra Chaurasiya</h4>
+                <p className="home-style-26">Backend Developer</p>
               </div>
             </div>
             <div className="home-style-27">
-              <span className="badge badge-lang home-style-28">English Speaker</span>
-              <BookOpen size={14} className="home-style-29" />
+              <span className="badge badge-lang home-style-28">Node JS</span>
+              <Code size={14} className="home-style-29" />
+              {/* <BookOpen size={14} className="home-style-29" /> */}
             </div>
           </div>
 
