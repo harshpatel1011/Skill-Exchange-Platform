@@ -1,0 +1,123 @@
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  position: relative;
+  z-index: 10;
+}
+.auth-input-container {
+  position: relative;
+  margin-bottom: 18px;
+}
+.auth-input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+.auth-input {
+  padding-left: 44px !important;
+}
+.glow-sphere {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.signup-style-1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-style-2 {
+  background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+  top: 10%;
+  left: 20%;
+}
+
+.signup-style-3 {
+  background: radial-gradient(circle, rgba(236,72,153,0.1) 0%, transparent 70%);
+  bottom: 10%;
+  right: 20%;
+}
+
+.signup-style-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.signup-style-5 {
+  background: var(--gradient-primary);
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.4);
+  margin-bottom: 12px;
+}
+
+.signup-style-6 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.signup-style-7 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.signup-style-8 {
+  margin-bottom: 20px;
+}
+
+.signup-style-9 {
+  margin-bottom: 14px;
+}
+
+.signup-style-10 {
+  font-size: 0.8rem;
+}
+
+.signup-style-11 {
+  margin-bottom: 24px;
+}
+
+.signup-style-12 {
+  font-size: 0.8rem;
+}
+
+.signup-style-13 {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.signup-style-14 {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.signup-style-15 {
+  font-weight: 700;
+  text-decoration: none;
+}
