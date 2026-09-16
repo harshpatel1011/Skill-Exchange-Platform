@@ -16,6 +16,7 @@ import Signup from './pages/Auth/Signup';
 import Layout from './components/layout/Layout';
 import PublicLayout from './components/layout/PublicLayout';
 import ScrollToTop from './components/layout/ScrollToTop';
+import InstallBanner from './components/common/InstallBanner';
 
 const AppContent = () => {
   const { currentUser } = useContext(AppContext);
@@ -55,6 +56,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <AppProvider>
+        <InstallBanner />
         <AppContent />
         <ToastContainer position="bottom-right" autoClose={3000} theme="light" />
       </AppProvider>
