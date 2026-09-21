@@ -16,13 +16,13 @@ const PublicLayout = ({
           SkillSwap
         </h2>
       </div>
-      <div className="pub-layout-style-6" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="pub-layout-actions">
         <ThemeToggle />
-        <div style={{ display: 'flex', gap: '12px' }}>
+        <div className="pub-layout-buttons">
           <Link to="/login" className="btn btn-secondary pub-layout-style-7">
             Log In
           </Link>
-          <Link to="/signup" className="btn btn-primary pub-layout-style-8">
+          <Link to="/signup" className="btn btn-primary pub-layout-style-8 pub-signup-btn">
             Sign Up
           </Link>
         </div>

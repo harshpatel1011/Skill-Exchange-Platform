@@ -50,6 +50,18 @@
   letter-spacing: -0.5px;
 }
 
+.pub-layout-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pub-layout-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .pub-layout-style-6 {
   display: flex;
   gap: 12px;
@@ -58,11 +70,13 @@
 .pub-layout-style-7 {
   text-decoration: none;
   padding: 8px 20px;
+  white-space: nowrap;
 }
 
 .pub-layout-style-8 {
   text-decoration: none;
   padding: 8px 20px;
+  white-space: nowrap;
 }
 
 .pub-layout-style-9 {
@@ -75,33 +89,52 @@
 
 @media (max-width: 768px) {
   .pub-layout-style-2 {
-    padding: 14px 20px;
-    margin: 16px 20px;
+    padding: 12px 18px;
+    margin: 14px 16px;
   }
   .pub-layout-style-9 {
     padding: 16px 20px 40px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+  .pub-signup-btn {
+    display: none !important;
+  }
   .pub-layout-style-2 {
     padding: 10px 14px;
     margin: 10px 12px;
     border-radius: 14px;
   }
-  .pub-layout-style-5 {
-    font-size: 1.05rem;
+  .pub-layout-actions {
+    gap: 10px;
   }
-  .pub-layout-style-6 {
+  .pub-layout-buttons {
     gap: 8px;
   }
-  .pub-layout-style-7,
-  .pub-layout-style-8 {
-    padding: 6px 12px;
-    font-size: 0.82rem;
+  .pub-layout-style-5 {
+    font-size: 1.1rem;
+  }
+  .pub-layout-style-7 {
+    padding: 6px 14px;
+    font-size: 0.85rem;
   }
   .pub-layout-style-9 {
     padding: 10px 12px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pub-layout-style-2 {
+    padding: 8px 10px;
+    margin: 8px 8px;
+  }
+  .pub-layout-style-5 {
+    font-size: 1rem;
+  }
+  .pub-layout-style-7 {
+    padding: 5px 10px;
+    font-size: 0.8rem;
   }
 }
 
