@@ -88,7 +88,10 @@ const Layout = ({
           isActive
         }) => `btn btn-secondary ${isActive ? 'active-nav' : ''}`} style={navStyle}>
             <Compass size={18} />
-            <span className="nav-text">Explore Skills</span>
+            <span className="nav-text">
+              <span className="desktop-nav-text">Explore Skills</span>
+              <span className="mobile-nav-text">Explore</span>
+            </span>
           </NavLink>
 
           <NavLink to="/requests" className={({
@@ -105,7 +108,10 @@ const Layout = ({
           isActive
         }) => `btn btn-secondary ${isActive ? 'active-nav' : ''}`} style={navStyle}>
             <MessageSquare size={18} />
-            <span className="nav-text">Chat Arena</span>
+            <span className="nav-text">
+              <span className="desktop-nav-text">Chat Arena</span>
+              <span className="mobile-nav-text">Chat</span>
+            </span>
           </NavLink>
 
           {/* Profile link for mobile bottom bar navigation */}

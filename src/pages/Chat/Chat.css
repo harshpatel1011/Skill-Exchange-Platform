@@ -18,10 +18,13 @@
           }
         }
         .channels-pane {
-          background: var(--bg-card);
+          background: #ffffff;
           border-right: 1px solid var(--border-color);
           display: flex;
           flex-direction: column;
+        }
+        .dark .channels-pane {
+          background: #1e293b;
         }
         .channel-item {
           display: flex;
@@ -51,7 +54,10 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          background: var(--bg-card);
+          background: #ffffff;
+        }
+        .dark .chat-header {
+          background: #1e293b;
         }
         .chat-body {
           flex: 1;
@@ -313,10 +319,14 @@
 
 .chat-style-26 {
   padding: 16px 24px;
-  background: var(--bg-card);
+  background: #ffffff;
   border-top: 1px solid var(--border-color);
   display: flex;
   gap: 12px;
+}
+
+.dark .chat-style-26 {
+  background: #1e293b;
 }
 
 .chat-style-27 {

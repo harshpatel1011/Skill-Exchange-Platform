@@ -12,7 +12,13 @@
   padding: 16px 40px;
   margin: 20px 40px;
   border-radius: 20px;
-  background: var(--bg-card);
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.dark .pub-layout-style-2 {
+  background: #1e293b;
 }
 
 .pub-layout-style-3 {

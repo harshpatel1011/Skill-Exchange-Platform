@@ -338,9 +338,13 @@ img, video, canvas, svg {
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
+    background: #ffffff;
     border-right: none;
     border-top: 1px solid var(--border-color);
     border-radius: 16px 16px 0 0;
+  }
+  .dark .sidebar {
+    background: #1e293b;
   }
   .main-content {
     margin-left: 0;
@@ -350,6 +354,7 @@ img, video, canvas, svg {
     padding-bottom: 84px;
   }
 }
+
 
 
 /* Toast styling override */
