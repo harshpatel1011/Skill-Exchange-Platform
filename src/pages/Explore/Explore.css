@@ -442,3 +442,85 @@
   padding-top: 20px;
   margin-top: 10px;
 }
+
+/* Responsive Media Queries for Explore Page */
+@media (max-width: 768px) {
+  .explore-style-4 {
+    font-size: 1.65rem;
+  }
+  .explore-style-3 {
+    margin-bottom: 24px;
+  }
+  .search-container {
+    margin-bottom: 20px;
+  }
+  .explore-style-6 {
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+  .category-tab {
+    padding: 6px 14px;
+    font-size: 0.825rem;
+  }
+  .member-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .member-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .explore-style-38 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .modal-body {
+    padding: 0 !important;
+    margin: 12px;
+    border-radius: 16px;
+  }
+  .explore-style-29 {
+    padding: 16px 20px;
+  }
+  .explore-style-30 {
+    font-size: 1.15rem;
+  }
+  .explore-style-33 {
+    padding: 16px 20px;
+  }
+  .explore-style-49 {
+    flex-direction: column;
+  }
+  .explore-style-49 button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-style-4 {
+    font-size: 1.4rem;
+  }
+  .search-box {
+    font-size: 0.95rem !important;
+    padding-left: 44px !important;
+  }
+  .member-header {
+    gap: 12px;
+  }
+  .explore-style-10 {
+    width: 42px;
+    height: 42px;
+    font-size: 0.95rem;
+  }
+  .explore-style-13 {
+    font-size: 0.95rem;
+  }
+  .member-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+

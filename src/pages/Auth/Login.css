@@ -105,3 +105,17 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+@media (max-width: 480px) {
+  .login-style-1 {
+    padding: 16px;
+  }
+  .auth-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+  .login-style-6 {
+    font-size: 1.35rem;
+  }
+}
+

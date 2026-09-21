@@ -818,3 +818,140 @@
 .cta-btn:hover { background: var(--bg-deep); color: var(--text-primary); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
 
 .cta-circles { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); z-index: 1; pointer-events: none; }
+
+/* Responsive Media Queries for Home Page */
+@media (max-width: 991px) {
+  .home-style-4 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+  .home-benefits,
+  .home-testimonials,
+  .home-faq {
+    padding: 60px 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+  .home-style-4 {
+    font-size: 2.2rem;
+  }
+  .home-style-5 {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+  .home-style-31 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .home-style-47,
+  .home-style-62,
+  .benefits-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 16px;
+  }
+  .section-header h2,
+  .section-title,
+  .home-style-45,
+  .home-style-59 {
+    font-size: 1.75rem;
+  }
+  .home-benefits,
+  .home-testimonials,
+  .home-faq {
+    padding: 40px 16px;
+  }
+  .benefit-card,
+  .testimonial-card {
+    padding: 24px 20px;
+  }
+  .home-cta {
+    padding: 60px 20px;
+    border-radius: 20px;
+  }
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+  .cta-btn {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 24px 14px;
+    border-radius: 16px;
+  }
+  .home-style-4 {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+  .home-style-6 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-style-7,
+  .home-style-8 {
+    width: 100%;
+    justify-content: center;
+  }
+  .home-style-9 {
+    min-height: 280px;
+  }
+  .home-style-10 {
+    width: 220px;
+    height: 220px;
+  }
+  .home-style-11 {
+    width: 160px;
+    height: 160px;
+  }
+  .home-style-12 {
+    width: 175px;
+    padding: 12px;
+    left: 0;
+    top: 2%;
+  }
+  .home-style-22 {
+    width: 175px;
+    padding: 12px;
+    right: 0;
+    bottom: 2%;
+  }
+  .home-style-15,
+  .home-style-25 {
+    font-size: 0.75rem;
+  }
+  .home-style-31 {
+    grid-template-columns: 1fr;
+  }
+  .stat-card {
+    padding: 16px;
+  }
+  .home-style-58 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .home-style-61 {
+    width: 100%;
+    justify-content: center;
+  }
+  .cta-content h2 {
+    font-size: 1.65rem;
+  }
+  .home-cta {
+    padding: 48px 16px;
+  }
+}
+

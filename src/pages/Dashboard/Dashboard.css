@@ -443,3 +443,63 @@
 
 .dashboard-layout > div, .stats-grid > div, .dash-style-23 > div { min-width: 0; }
 
+/* Responsive Media Queries for Dashboard */
+@media (max-width: 768px) {
+  .dash-style-3 {
+    font-size: 1.65rem;
+  }
+  .dash-style-2 {
+    margin-bottom: 24px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .dash-style-5, .dash-style-9, .dash-style-13, .dash-style-17 {
+    padding: 16px;
+  }
+  .dash-style-23 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .dash-style-35 {
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+    padding-left: 0;
+    padding-top: 24px;
+  }
+  .widget-card {
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+  .log-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .dash-style-49 {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash-style-3 {
+    font-size: 1.4rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .dash-style-56 {
+    grid-template-columns: 1fr;
+  }
+  .dash-style-22,
+  .dash-style-43,
+  .dash-style-53 {
+    font-size: 1rem;
+  }
+}
+
+

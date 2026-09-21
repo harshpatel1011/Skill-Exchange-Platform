@@ -36,10 +36,30 @@ const Layout = ({
 
   // Calculate pending incoming requests count for badge
   const pendingCount = requests.filter(req => req.receiverId === currentUser.id && req.status === 'pending').length;
-  return <div className="app-container">
-      {/* Sidebar Navigation */}
+  return (
+    <div className="app-container">
+      {/* Mobile Top Header (only visible on mobile <= 640px) */}
+      <header className="mobile-header">
+        <Link to="/" className="mobile-logo">
+          <div className="layout-style-3" style={{ width: '32px', height: '32px' }}>
+            <Zap size={16} color="#fff" />
+          </div>
+          <span className="logo-text layout-style-5" style={{ fontSize: '1.2rem' }}>SkillSwap</span>
+        </Link>
+        <div className="mobile-header-actions">
+          <ThemeToggle />
+          <Link to="/profile" className="mobile-avatar-btn" title="View Profile">
+            {currentUser.name ? currentUser.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase() : 'U'}
+          </Link>
+          <button onClick={logoutUser} className="mobile-logout-btn" title="Log Out">
+            <LogOut size={16} />
+          </button>
+        </div>
+      </header>
+
+      {/* Sidebar / Bottom Navigation */}
       <aside className="sidebar">
-        <Link to="/" className="layout-style-1">
+        <Link to="/" className="layout-style-1 desktop-only-sidebar-item">
           <div className="layout-style-2">
             <div className="layout-style-3">
               <Zap size={20} color="#fff" />
@@ -88,10 +108,17 @@ const Layout = ({
             <span className="nav-text">Chat Arena</span>
           </NavLink>
 
+          {/* Profile link for mobile bottom bar navigation */}
+          <NavLink to="/profile" className={({
+          isActive
+        }) => `btn btn-secondary mobile-only-nav-item ${isActive ? 'active-nav' : ''}`} style={navStyle}>
+            <Award size={18} />
+            <span className="nav-text">Profile</span>
+          </NavLink>
         </nav>
 
-        {/* User Mini Profile Panel */}
-        <div className="profile-details glass-panel layout-style-9">
+        {/* User Mini Profile Panel (Desktop / Tablet only) */}
+        <div className="profile-details glass-panel layout-style-9 desktop-only-sidebar-item">
           <Link to="/profile" className="profile-info-hover layout-style-10">
             <div className="layout-style-11">
               <div className="layout-style-12">
@@ -133,6 +160,7 @@ const Layout = ({
         {children}
         {!shouldHideFooter && <Footer />}
       </main>
-    </div>;
+    </div>
+  );
 };
 export default Layout;

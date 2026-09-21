@@ -66,3 +66,36 @@
   margin: 0 auto;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .pub-layout-style-2 {
+    padding: 14px 20px;
+    margin: 16px 20px;
+  }
+  .pub-layout-style-9 {
+    padding: 16px 20px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pub-layout-style-2 {
+    padding: 10px 14px;
+    margin: 10px 12px;
+    border-radius: 14px;
+  }
+  .pub-layout-style-5 {
+    font-size: 1.05rem;
+  }
+  .pub-layout-style-6 {
+    gap: 8px;
+  }
+  .pub-layout-style-7,
+  .pub-layout-style-8 {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+  .pub-layout-style-9 {
+    padding: 10px 12px 30px;
+  }
+}
+
